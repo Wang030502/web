@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+      *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+     }
+    .top{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 8rem;
+    background-color: #004098;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* 这一步变化是加了盒子底线与层级 */
+    border-bottom: 1px solid snow;
+    flex-wrap: wrap;
+   z-index: 99;
+}
+.pic{
+  position: relative;
+  width: 4.5rem;
+  height: 4.5rem;
+  left: 5%;
+
+}
+.title{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+   left: 6rem;
+}
+.dh{
+    left: 10%;
+    width: 55%;
+    height: 4rem;
+    display: flex;
+    color: white;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+}
+.dh a{
+    color: aliceblue;
+}
+.dh a:hover{
+    color: #6f6f6f;
+}
+.img1{
+    height: 5rem;
+    position: relative;
+    right: -13%;
+}
+.picture{
+         position: relative;
+         top: 8rem;
+         width: 100%;
+         height: 25rem;
+         overflow: hidden;
+}
+.box2{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        animation: box2 15s infinite ease-out;
+        display: flex;
+    }
+    .img3{
+        width: 100%;
+        height: 56%;
+    }
+     /* 利用css动画实现轮播效果 */
+     @keyframes box2{
+        0%{
+            transform:translateX(-100%);
+        }
+        50%{
+            transform:translateX(-200%);
+        }
+        100%{
+            transform:translateX(-300%);
+        }
+
+    }
+    .box2:nth-child(1){
+        left: 100%;
+    }
+    .box2:nth-child(2){
+        left: 200%;
+    }
+    .box2:nth-child(3){
+        left: 300%;
+    }
+   .box{
+       position: absolute;
+       width: 75rem;
+       left: 11%;
+       top: 34rem;
+       height: 35rem;
+       background-color: white;
+   }
+   .title1{
+       position: relative;
+       left: 1rem;
+       color: #004098;
+       font-size: 1.5rem;
+       font-weight: bold;
+       display: block;
+   }
+   .img2{
+       /* float: left; */
+       background-image: url(E:\vscode\web-development-master\仿大学官网首页\Image\7.jpg);
+       position: relative;
+       top: 1.2rem;
+       width: 70%;
+       height: 100%;
+       background-size: cover;
+       display: inline-block;
+   }
+   .img2 div{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: 100%;
+       background-color: black;
+       opacity: 0.5;
+       color: white;
+       font-size: 2rem;
+       font-weight: bold;
+       cursor: pointer;
+       visibility: hidden;
+       flex-wrap: wrap;
+   }
+   .img2 div:hover{
+     color: #004098;
+   }
+   .img2:hover div{
+       visibility: visible;
+   }
+   .text{
+       top: -12.5rem;
+       width: 27%;
+       height: 100%;
+       position: relative;
+       /* background-color: wheat; */
+       /* left: 73%; */
+       margin-left: 1rem;
+       zoom: 1;
+       display: inline-block;
+   }
+   .text .title3{
+       display: flex;
+       justify-content: space-around;
+       height: 2.5rem;
+       width: 100%;
+       position: relative;
+       top: 0;
+       font-weight: bold;
+       font-size: 1.5rem;
+       background-color: white;
+   }
+   .text .title3 .first{
+       left: 0;
+       width: 50%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: nowrap;
+       background-color: #004098;
+       color: white;
+       cursor: pointer;
+   }
+   .text .title3 .second{
+       width: 50%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: nowrap;
+       cursor: pointer;
+   }
+   .text .title3 .second:hover{
+    background-color: #004098;
+       color: white;
+   }
+   .content1{
+       position: relative;
+       width: 100%;
+       height: 70%;
+       /* background-color: violet; */
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   .content1 div{
+       display: flex;
+       align-items: center;
+       cursor: pointer;
+
+   }
+   .content1 div img{
+       height: 90%;
+       padding-right: 0.8rem;
+   }
+   .content1 div span:hover{
+       color: red;
+   }
+   .picture1{
+         position: relative;
+         top: 50rem;
+         width: 100%;
+         height: 25rem;
+         overflow: hidden;
+}
+.box3{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        animation: box2 15s infinite ease-out;
+        display: flex;
+    }
+       /* 利用css动画实现轮播效果 */
+       @keyframes box3{
+        0%{
+            transform:translateX(-100%);
+        }
+        50%{
+            transform:translateX(-200%);
+        }
+        100%{
+            transform:translateX(-300%);
+        }
+
+    }
+    .box3:nth-child(1){
+        left: 100%;
+    }
+    .box3:nth-child(2){
+        left: 200%;
+    }
+    .box3:nth-child(3){
+        left: 300%;
+    }
+    .bottom{
+    left: 0;
+    top: 215%;
+    height: 8rem;
+    background-color: #004098;
+    width: 100%;
+    display: flex;
+  align-items: center;
+    /* 这一步变化是加了盒子底线与层级 */
+  position: absolute;
+  justify-content: center;
+    
+}
+.bottom span{
+    color: #aaaaaa;
+    cursor: pointer;
+}
+.bottom span:hover{
+    color: orange;
+}
+.bottom img{
+    height: 4rem;
+ position: relative;
+ right: 10%;
+}
+   </style>
+</head>
+<body>
+    <div class="top">
+        <img src="E:\vscode\web-development-master\仿大学官网首页\Image\25.png" alt="" class="pic">
+        <a href="#"><span class="title">&nbsp;南华大学</span></a>
+        <div class="dh">
+            <a href="#"><div>首页</div></a>
+            <a href="#"><div>南华概况</div></a>
+            <a href="#"><div>机构设置</div></a>
+            <a href="#"><div>教育科学</div></a>
+            <a href="#"><div>科学研究</div></a>
+            <a href="#"><div>招生就业</div></a>
+            <a href="#"><div>人才招聘</div></a>
+            <a href="#"><div>国际合作</div></a>
+            <a href="#"><div>校园文化</div></a>
+        </div>
+        <img src="E:\vscode\web-development-master\仿大学官网首页\Image\2.jpg" alt="" class="img1">
+    </div>
+     <!-- 轮播图 -->
+     <div class="picture">
+        <div class="box2"><img src="E:\vscode\web-development-master\仿大学官网首页\Image\16.jpg" alt="" class="img3"></div>
+        <div class="box2"><img src="E:\vscode\web-development-master\仿大学官网首页\Image\17.jpg" alt="" class="img3"></div>
+        <div class="box2"><img src="E:\vscode\web-development-master\仿大学官网首页\Image\18.jpg" alt="" class="img3"></div>
+    </div>
+    <div class="box">
+        <span class="title1">南华新闻</span>
+       <div class="img2">
+           <div>点击进入新闻网</div>
+       </div>
+       <div class="text">
+          <div class="title3"><span class="first">通知公告</span><span class="second">学术讲座</span></div>
+          <div class="content1">
+              <div><img src="E:\vscode\web-development-master\仿大学官网首页\Image\8.jpg" alt="">
+                  <span>
+                《南华大学学报（自然科学版）》启用“腾云”期刊协同采编系统的通知</span>
+            </div>
+              <div><img src="E:\vscode\web-development-master\仿大学官网首页\Image\9.jpg" alt="">
+                <span>
+           关于举办湖南省首届“椰树杯”食品科技创新大赛的通知</span>
+            </div>
+              <div><img src="E:\vscode\web-development-master\仿大学官网首页\Image\10.jpg" alt=""> <span>
+研究阐释党的十九届六中全会精神国家社科基金重大项目招标公告</span></div>
+              <div><img src="E:\vscode\web-development-master\仿大学官网首页\Image\11.jpg" alt=""> <span>
+关于对参与申报2021年度湖南省科学技术奖项目的公示</span></div>
+              <div><img src="E:\vscode\web-development-master\仿大学官网首页\Image\12.jpg" alt=""> <span>
+关于对参与申报2021年度湖南省科学技术奖项目的公示</span></div>
+          </div>
+       </div>
+    </div>
+    <div class="picture1">
+        <div class="box3"><img src="E:\vscode\web-development-master\仿大学官网首页\Image\13.jpg" alt="" class="img3"></div>
+        <div class="box3"><img src="E:\vscode\web-development-master\仿大学官网首页\Image\14.jpg" alt="" class="img3"></div>
+        <div class="box3"><img src="E:\vscode\web-development-master\仿大学官网首页\Image\15.jpg" alt="" class="img3"></div>
+    </div>
+    <div class="bottom">
+        <img src="E:\vscode\web-development-master\仿大学官网首页\Image\24.png" alt="">
+         <span>版权所有  Copyright © 2005-2020 hainan university   琼公网安备46010802000692号 琼ICP备05000523号-2　
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;地址：湖南省海口市人民大道58号 邮编：310023
+        </span>    
+    </div>
+</body>
+</html>
