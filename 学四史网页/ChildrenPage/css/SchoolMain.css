@@ -1,0 +1,207 @@
+* {
+	width: 100%;
+	height: 1000px;
+}
+
+/* loge图片 */
+.login {
+	width: 100%;
+	margin-top: 0px;
+	height: 150px;
+	background-color: #a7a7a7;
+	margin-left: 0px;
+}
+
+.login1 {
+	background-image: url(../img/login1.png);
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100 100;
+	background-position: center center;
+	/*图片居中*/
+	/* background-color: red; */
+}
+
+.login2 {
+	background-image: url(../img/login2.png);
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100 100;
+	background-position: center center;
+	/*图片居中*/
+}
+
+/* 下拉菜单 */
+.XiaLaCaiDan {
+	padding: 0 0 0 0;
+	width: 100%;
+	background-color: #e65b60;
+	list-style: none;
+	height: 30px;
+}
+
+ul {
+	list-style: none;
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	/* 清除黑点 */
+	display: block;
+}
+
+.main {
+	width: 100%;
+	height: 30px;
+	/* background-color: #0062CC; */
+	margin-left: 0;
+	padding-right: 7%;
+}
+
+.main li {
+	width: 15%;
+	margin-left: 5%;
+	/* background-color: yellow; */
+	text-align: center;
+	padding: 0, 0, 0, 0;
+}
+
+.main li ul {
+	display: none;
+	clear: both;
+	margin-top: 6px;
+	width: 100%;
+	text-align: center;
+
+}
+
+.main li ul li {
+	background-color: rgba(96, 96, 96, 0.8);
+	/* ie不支持百分号 */
+	/* 影藏小框基本色 */
+	color: black;
+	list-style-type: none;
+	display: block;
+	margin-left: -20%;
+	width: 140%;
+
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+}
+
+.main li:hover {
+	background-color: rgba(96, 96, 96, 0.3);
+	/* 影藏大框 */
+	color: black;
+}
+
+.main li:hover ul {
+	background-color: rgba(96, 96, 96, 0.3);
+	/* 影藏中框基本背景色 */
+	color: #ccc2c0;
+	color: #007BFF;
+}
+
+.main li ul li:hover {
+	background-color: rgba(50, 50, 50, 0.3);
+	/* 影藏栏背景she颜色 */
+}
+
+
+/* 轮播图 */
+.LunBoTu {
+	width: 100%;
+	margin-left: 0px;
+	position: absolute;
+}
+
+#Box {
+	width: 100%;
+	height: 400px;
+	display: inline-block;
+	border: 1px solid black;
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: auto;
+}
+
+
+#firstImg {
+	background-image: url(../img/LunBoImg1.jpg);
+}
+
+#secondImg {
+	background-image: url(../img/LunBoImg2.jpg);
+}
+
+#thiredImg {
+	background-image: url(../img/LunBoImg3.jpg);
+}
+
+#endImg {
+
+	background-image: url(../img/LunBoImg5.jpg);
+}
+
+.Slide {
+	width: 1200px;
+	/* 800 */
+	height: 400px;
+	position: absolute;
+	background-size: 100%100%;
+	/* 图片覆盖完整页面 */
+}
+
+.QinZhuText{
+	width: 100%;
+	height: 178px;
+/* 	background-color: red; */
+	margin-top: 370px;
+	position: fixed;
+	text-align: center;
+}
+
+.A{
+	font-family: 微软雅黑;
+	font-size: 45px;
+	background-color: rgba(99, 99, 99, 0.6);
+	height: 50%;
+	color: #e8e8e8;
+}
+
+.B{
+	height: 50%;
+	font-family: 微软雅黑;
+	font-size: 45px;
+	background-color: rgba(99, 99, 99, 0.6);
+	color: #e8e8e8;
+}
+
+*:hover .A{
+	animation:AMove 2s ease 0s 1 alternate; /* 左移动动画效果简写 */
+}
+
+*:hover .B{
+	animation:BMove 2s ease 0s 1 alternate; /* 左移动动画效果简写 */
+}
+
+@keyframes AMove
+{
+	0%  {margin-left: -50%;}
+	100% {margin-left: 0%;}
+}
+
+@keyframes BMove
+{
+	0%  {margin-left: 50%;}
+	100% {margin-left: 0%;}
+}
+
+

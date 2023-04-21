@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"><!-- 关键词 -->
+		<meta name="description" content="创作网页江西师范大学八十周年校庆献礼"><!-- 描述 -->
+		<meta name="author" content="@我很冷静"><!-- 网页作者 -->
+		<!-- <meta http-equiv="refresh" content="30"> -->
+		<!-- 每30秒钟刷新当前页面 -->
+		<title>了解师大</title>
+		<link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap.css">
+		<style src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></style>
+		<link rel="stylesheet" type="text/css" href="css/SchoolMain.css" />
+		<style src="css/SchoolMain.css"></style>
+	</head>
+	<!-- onmouseenter="cccSlide('c','c_arrow','c_ctrl')" -->
+	<body onmouseover="start()" onmouseout="stop()">
+		
+		<!-- 头部图片logo -->
+		<div class="login row">
+			<div class="col-md-6 col-sm-12 col-12">
+				<aside class="login1 "></aside>
+			</div>
+			<div class="col-md-6 col-sm-12 col-12">
+				<aside class="login2"></aside>
+			</div>
+		</div>
+		
+		<!-- 轮播图 -->
+		<div class="LunBoTu row">
+			<!-- div class="LunBoTuLeftRight" onclick="LastMove()">&#40;</div> -->
+			<div id="Box">
+				<div id="firstImg" class="Slide"></div>
+				<div id="secondImg" class="Slide"></div>
+				<div id="thiredImg" class="Slide"></div>
+				<div id="endImg" class="Slide"></div>
+			</div>
+			<!-- <div class="LunBoTuLeftRight " onclick="NextMove()">&#41;</div> -->
+		</div>
+
+		<!-- 下拉菜单 -->
+		<div class="XiaLaCaiDan col-md-12">
+			<ul class="row main clearfix d-flex">
+				<li class="col-md-2 flex-fill" onclick="turntopage('SchoolJianJie.html')">学校简介
+				</li>
+				<li class="col-md-2 flex-fill" onclick="turntopage('SchoolHistory.html')">历史沿革
+				</li>
+				<li class="col-md-2 flex-fill" onclick="turntopage('SchoolZhangCheng.html')">学校章程
+				</li>
+				<li class="col-md-2 flex-fill" onclick="turntopage('XiaoQIngGongGao.html')">校庆公告
+				</li>
+				<li class="col-md-2 flex-fill">学校标识
+					<ul class="col">
+						<li onclick="turntopage('SchoolName.html')">校名</li>
+						<li onclick="turntopage('SchoolMusic.html')">校歌</li>
+						<li onclick="turntopage('schoolBadge.html')">校徽</li>
+						<li onclick="turntopage('SchoolQi.html')">校旗</li>
+						<li onclick="turntopage('SchoolXun.html')">校训</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="QinZhuText">
+			<div class="A">
+				预祝江西师范大学&nbsp;&nbsp;八十&nbsp;&nbsp;周年校庆
+			</div>
+			<div class="B">
+				圆满成功
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="js/SchoolMain.js"></script>
+	</body>
+</html>

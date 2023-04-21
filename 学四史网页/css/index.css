@@ -1,0 +1,500 @@
+.Box {
+	overflow: hidden;
+	width: 100%;
+	background-color: #007BFF;
+}
+
+.TimeBox {
+	background-image: url(../img/SchoolMain.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	width: 100%;
+	height: 800px;
+}
+.ListBox{
+	padding-left: 0px;
+}
+
+.ListBox P {
+	background-color: rgba(99, 99, 99, 0.3);
+	text-align: right;
+	width: 30%;
+	color: #e8e8e8;
+	padding-right: 5%;
+	padding-top: 20px;
+	height: 100px;
+	margin-left: 0%;	/* 150px */
+	margin-top: 80px;
+	font-family: 微软雅黑;
+	font-size: 45px;
+	border-top-right-radius: 30%;
+	border-bottom-right-radius: 30%;
+	/* 定义动画 */
+	/* animation-name: myfirst;
+	animation-duration: 5s;时长
+	animation-timing-function: linear;速度效果
+	animation-delay: 2s;开始动画时间
+	animation-iteration-count: infinite;重复次数：无限/n
+	animation-direction: alternate;周期变化效果
+	animation-play-state: running; 动画启动与停止*/
+	animation:ListBoxPRightMove 2s ease 0s 1 alternate; /* 左移动动画效果简写 */
+}
+
+@keyframes ListBoxPRightMove
+{
+	0%  {margin-left: -30%;}
+	100% {margin-left: 0%;}
+}
+
+
+
+.ButtonList {
+	/* 悬浮工具栏按钮 */
+	background-color: rgba(60, 60, 60, 0.9);
+	margin-left: 1470px;
+	margin-top: -180px;
+	width: 40px;
+	height: 40px;
+}
+
+.TimeBoxText {
+	background-color: rgba(99, 99, 99, 0.5);
+	margin-top: 50px;
+	border-top-left-radius: 30%;
+	border-bottom-left-radius: 30%;
+	/* margin-left: 55%; */
+	animation:TimeBoxTextLeftMove 5s ease 0s 1 alternate;
+	/* 右移动动画效果简写 */
+	margin-left: 1%;
+	
+}
+
+@keyframes TimeBoxTextLeftMove
+{
+	0%  {margin-left: 100%;}
+	/* 25%  {margin-left: 50%;} */
+	40%  {margin-left: 100%;}
+	/* 75%  {margin-left: 120px;} */
+	100% {margin-left: 1%;}
+}
+
+.TimeBoxText .Text1 {
+	text-align: center;
+	color: #e8e8e8;
+	font-family: 微软雅黑;
+	font-size: 50px;
+}
+
+.TimeBoxText .Text2 {
+	text-align: center;
+	color: #e8e8e8;
+	font-family: 微软雅黑;
+	font-size: 25px;
+}
+
+.JiShiBox {
+	background-color: rgba(99, 99, 99, 0);
+	padding-left: 15%;
+	padding-right: 15%;
+	margin-top: 100px;
+}
+
+.DayBox {
+	background-color: rgba(99, 99, 99, 0.8);
+	margin-left: 6%;
+	width: 9%;
+	height: 150px;
+	padding-left: 0px;
+	padding-right: 0px;
+	/* box-shadow: 2px 2px #bfbfbf; */
+}
+
+/* 悬浮动画 */
+.DayBox:hover{
+	background-color: rgba(66, 66, 66, 0.8);	/* 颜色变深 */
+	transform: scale(1.2);		/* 盒子扩大1.2倍 */
+}
+
+/* 时间盒子向上出现 */
+.TimeBoxMove1{
+	/* display: none; */
+	animation:TimeBoxTopMove 6s ease 0s 1 alternate;
+}
+.TimeBoxMove2{
+	/* display: none; */
+	animation:TimeBoxTopMove 7s ease 0s 1 alternate;
+}
+.TimeBoxMove3{
+	/* display: none; */
+	animation:TimeBoxTopMove 8s ease 0s 1 alternate;
+}
+.TimeBoxMove4{
+	/* display: none; */
+	animation:TimeBoxTopMove 9s ease 0s 1 alternate;
+}
+
+
+@keyframes TimeBoxTopMove
+{
+	0% {margin-top: 600px; }
+	80%{margin-top: 600px;}
+	100%{margin-bottom: 30px;}
+}
+
+.spanTime {
+	/* background-color: red; */
+	width: 100%;
+	height: 50%;
+	font-family: 微软雅黑;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 4px;
+	color: #b5b5b5;
+	border-bottom: 1px solid #cccccc;
+	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) white rgba(0, 0, 0, 0);
+	border-style: solid;
+}
+
+.spanTimeDayButtBox {
+	/* background-color: yellowgreen; */
+	width: 100%;
+	height: 50%;
+	font-family: 微软雅黑;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 4px;
+	color: #b5b5b5;
+}
+
+
+/* <!-- 点击浏览师大 --> */
+.ShiDaPageBox {
+	background-color: white;
+	height: 900px;
+	width: 100%;
+	margin-top: 0px;
+/* 	padding-bottom: 40px; */
+}
+
+.ShiDaPageBox:hover .ShiDaPageBoxImg img{
+	animation:ShiDaPageBoxImgImgMove 2s linear 0s infinite normal;
+}
+
+@keyframes ShiDaPageBoxImgImgMove
+{
+	0% {margin-left: 39%; }
+	15% {margin-left: 39%; }
+	35%{margin-left: 35%;}
+	50%{margin-left: 39%;}
+	65%{margin-left: 35%;}/* 41 */
+	85%{margin-left: 39%;}
+	100%{margin-left: 39%;}
+	/* 振动效果 */
+}
+
+
+.ShiDaPageBoxText1 {
+	font-family: 微软雅黑;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 100px;
+	width: 100%;
+	height: 100px;
+}
+
+.ShiDaPageBoxText2 {
+	font-family: 微软雅黑;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 100px;
+	width: 100%;
+	height: 400px;
+}
+
+.ShiDaPageBoxImg{
+	/* background-color: red; */
+}
+
+.ShiDaPageBoxImg:hover img{
+	margin-top: 1%;
+	/* margin-left: 41%; */
+	margin-right: 39%;
+	width: 22%;
+	height: auto;
+}
+.ShiDaPageBoxImg:hover .ShiDaPageBoxImgTip{
+	display: block;
+}
+
+img {
+	margin-top: 0px;
+	margin-left: 40%;
+	margin-right: 40%;
+	width: 20%;
+	height: auto;
+}
+
+.ShiDaPageBoxImgTip {
+	display: none;
+	font-family: 微软雅黑;
+	color: #616161;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 30px;
+	width: 100%;
+	height: 100px;
+	/* margin-bottom: 2px; */
+}
+
+
+/* <!-- 过渡页 --> */
+.GuoDuPage {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	background-color: #eaeff1;
+	height: 600px;
+	width: 100%;
+	/* overflow: hidden; */
+}
+
+.GuoDuPageContent {
+	float: left;
+	padding-left: 30px;
+	padding-top: 40px;
+	width: 50%;
+}
+
+.GuoDuPage h2 {
+	padding-left: 30px;
+	color: #424242;
+	font-size: 48px !important;
+	font-family: 微软雅黑;
+	margin-bottom: 20px;
+}
+
+.GuoDuPageContent1 {
+	color: #424242;
+	font-size: 24px;
+	/* text-transform: capitalize; */
+	text-align: left;
+	padding-top: 30px;
+}
+
+.GuoDuPageImg {
+	background-color: red;
+	width: 50%;
+	height: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.GuoDuPageImg div:hover{
+	background-size: 120% 120%;
+}
+
+.GuoDuPageImg .img1 {
+	background-image: url(../img/GuoDuPageImg1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	position: relative;
+	right: 0%;
+	height: 40%;
+	width: 60%;
+}
+
+
+
+.GuoDuPageImg .img2 {
+	background-image: url(../img/GuoDuPageImg2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	position: relative;
+	left: 60%;
+	bottom: 40%;
+	height: 60%;
+	width: 40%;
+}
+.GuoDuPageImg .img3 {
+	background-image: url(../img/GuoDuPageImg3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	position: relative;
+	right: 0%;
+	bottom: 60%;
+	height: 60%;
+	width: 60%;
+}
+.GuoDuPageImg .img4 {
+	background-image: url(../img/GuoDuPageImg4.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	position: relative;
+	left: 60%;
+	bottom: 100%;
+	height: 40%;
+	width: 40%;
+}
+
+/* 升旗模块 */
+.ShengQiBox{
+	margin-top: 0px;
+	width: 100%;
+	height: 800px;
+	background-color: white;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 100px;
+}
+
+.ShengQiBox:hover .ShengQiBoxText h2{
+	margin-top: 5%;
+	animation:ShengQiBoxTextH2 4s ease 0s 1 alternate;
+}
+
+@keyframes ShengQiBoxTextH2
+{
+	0% {margin-top: 100%; }
+	30%{margin-top: 100%;}
+	80%{margin-top: -10%}
+	85%{margin-top: 5%}
+	90%{margin-top: 0%}
+	95%{margin-top: 5%}
+	97%{margin-top: 2%}
+	100%{margin-top: 5%}
+}
+
+.ShengQiBoxText{
+	float: left;
+	/* background-color: red; */
+	width: 70%;
+	height: 100%;
+	text-align: center;
+}
+
+.ShengQiBoxText h2{
+	/* background-color: green; */
+	text-shadow:0 2px 2px #828282;
+	color: #424242;
+	font-size: 48px !important;
+	text-transform: capitalize;
+	width: 100%;
+	margin-top: 5%;
+}
+
+.ShengQiBoxText1{
+	/* background-color: yellow; */
+	color: #424242;
+	font-size: 24px !important;
+	text-transform: capitalize;
+	width: 100%;
+	padding-top: 5%;
+}
+
+.QiGan{
+	/* margin-top: 20px;
+	/* margin-bottom: 0px; */
+	margin-left: 70%;
+	width: 30%;
+	height: 600px;
+	/* background-color: red; */
+	background-image: url(../img/QiGan.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	/*图片居中*/
+}
+
+#QiZhi{
+	
+	margin-top: 400px;
+	/* 38px————400px */
+	margin-left: 51%;
+}
+
+
+
+
+
+
+/* <!-- 浏览四史 --> */
+.LiuLanShiSi {
+	margin-top: 0px;
+	margin-right: 0px;
+	padding-top: 80px;
+	background-color: #f8feff;
+	height: 800px;
+	width: 100%;
+}
+
+.LiuLanShiSiContent h2 {
+	padding-left: 40px;
+	color: #424242;
+	font-size: 48px !important;
+	text-transform: capitalize;
+	width: 100%;
+}
+
+.LiuLanShiSiContent1 {
+	padding-top: 20px;
+	padding-left: 40px;
+	color: #424242;
+	font-size: 24px;
+	text-transform: capitalize;
+	width: 80%;
+}
+
+.LiuLanShiSiButton {
+	margin-top: 20px;
+	padding-left: 9%;
+	width: 100%;
+	height: 400px;
+	/* background-color: red; */
+}
+
+.LiuLanShiSiBook {
+	box-shadow: 4px 4px #7e7e7e; /* 盒子阴影 */
+	background-image: url(../img/bookImg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	/*图片居中*/
+	padding-right: 5%;
+	margin-top: 20px;
+	float: left;
+	margin-left: 20px;
+	width: 20%;
+	height: 350px;
+	padding-top: 60px;
+}
+
+.LiuLanShiSiBook:hover{
+	transform: scale(1.1);
+}
+
+.DangShiImg {
+	background-color: #d8d8d8;
+	/* margin-left: 40px; */
+	padding-top: 10px;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	color: #424242;
+	font-size: 24px !important;
+	text-transform: capitalize;
+}
+
+.DangShiText {
+	/* background-color: greenyellow; */
+	margin-left: 15px;
+	margin-top: 60px;
+	width: 120%;
+	text-align: left;
+	color: #424242;
+	font-size: 18px;
+}
